@@ -1,0 +1,42 @@
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\a.exe...done.
+(gdb) l
+1       //2. Write a C program to add two numbers.
+2       #include<stdio.h>
+3       int main()
+4       {
+5           int a,b;
+6           printf("Enter the values\n");
+7           scanf("%d",&a);
+8           printf("Enter the values\n");
+9           scanf("%d",&b);
+10          int sum=a+b;
+(gdb) b
+No default breakpoint address now.
+(gdb) r
+Starting program: C:\Users\LENOVO\c-activity-sets\set01/a.exe 
+[New Thread 7972.0x69c]
+[New Thread 7972.0x2a2c]
+Enter the values
+q
+Enter the values
+[Inferior 1 (process 7972) exited with code 015170000]
+(gdb) 3 5
+Undefined command: "3".  Try "help".
+(gdb) r
+Starting program: C:\Users\LENOVO\c-activity-sets\set01/a.exe 
+[New Thread 11924.0x49e0]
+[New Thread 11924.0x4b7c]
+Enter the values
+2 4 5
+Enter the values
+[Inferior 1 (process 11924) exited with code 06]
+(gdb) q
