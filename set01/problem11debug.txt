@@ -1,6 +1,6 @@
 GNU gdb (GDB) 7.6.1
 Copyright (C) 2013 Free Software Foundation, Inc.
-License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>   
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.  Type "show copying"      
 and "show warranty" for details.
@@ -21,11 +21,11 @@ Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\a.exe...done.
 10          int sum=a+b;
 (gdb) r
 Starting program: C:\Users\LENOVO\c-activity-sets\set01/a.exe 
-[New Thread 15168.0x2e78]
-[New Thread 15168.0x41e0]
+[New Thread 8780.0x3ed8]
+[New Thread 8780.0x3294]
 Enter the values
-47
+43
 Enter the values
-24
-[Inferior 1 (process 15168) exited with code 0107]
+30
+[Inferior 1 (process 8780) exited with code 0111]
 (gdb) q
