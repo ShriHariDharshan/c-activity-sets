@@ -21,9 +21,11 @@ int input()
 }
 int add(int a, int b)
 {
-    return a+b;
+    int sum;
+    sum= a+b;
+    return sum;
 }
 void output(int a, int b, int sum)
 {
-    printf("The sum of the two numbers of the two numbers of %d and %d is %d\n",a,b,sum);
+    printf("The sum of the two numbers %d and %d is %d\n",a,b,sum);
 }

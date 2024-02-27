@@ -1,0 +1,26 @@
+What is hash(#)?
+
+Hash(#) indicates the lines to be processed by the pre-processor.
+
+What is a preprocessor?
+
+Pre-processor is the part of compiler and it processes the code that begins with the #.
+
+What is compiler?
+
+The compiler converts C source file into and executive file.
+
+What is GCC?
+
+GCC is a C language compiler that converts c sourse file to executable.
+
+What is the preprocessor directive?
+
+It directs stdio.h 
+
+What is the effect of #include<stdio.h>?
+
+Hash(#) tells the processor to process the line.
+include is a preprocesstr directive which tells the compiler to process the header file and include the function prototypes from stdio.h in the C source file.
+
+stdio.h contains the function prototypes for printf and scanf functions.

@@ -1,4 +1,4 @@
-a.exe
+PS C:\Users\LENOVO\c-activity-sets\set01> gdb problem02.exe
 GNU gdb (GDB) 7.6.1
 Copyright (C) 2013 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -8,13 +8,85 @@ and "show warranty" for details.
 This GDB was configured as "mingw32".
 For bug reporting instructions, please see:
 <http://www.gnu.org/software/gdb/bugs/>...
-Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\a.exe...done.
+Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\problem02.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem02.c, line 6.
+(gdb) r main
+Starting program: C:\Users\LENOVO\c-activity-sets\set01/problem02.exe main
+[New Thread 5148.0x37fc]
+[New Thread 5148.0x1ba4]
+
+Breakpoint 1, main () at problem02.c:6
+6           printf("Enter the values\n");
+(gdb) 4
+Undefined command: "4".  Try "help".
+(gdb) b main 
+Note: breakpoint 1 also set at pc 0x40146e.
+Breakpoint 2 at 0x40146e: file problem02.c, line 6.
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+Starting program: C:\Users\LENOVO\c-activity-sets\set01/problem02.exe main
+[New Thread 3328.0x1d90]
+[New Thread 3328.0x1880]
+
+Breakpoint 1, main () at problem02.c:6
+6           printf("Enter the values\n");
+(gdb) n
+Enter the values
+7           scanf("%d",&a);
+(gdb) s
+2
+8           printf("Enter the values\n");
+(gdb) n
+Enter the values
+9           scanf("%d",&b);
+(gdb) s
+4
+10          int sum=a+b;
+(gdb) n
+11          return sum;
+(gdb) s
+12      }(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) n
+which has no line number information.
+0x0040128a in __register_frame_info ()
+(gdb) p a
+No symbol "a" in current context.
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 3328] will be killed.
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+PS C:\Users\LENOVO\c-activity-sets\set01> cd set01
+cd : Cannot find path 'C:\Users\LENOVO\c-activity-sets\set01\set01' because it does not exist.
+At line:1 char:1
++ cd set01
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\LENOVO...ets\set01\set01:String) [Set-Location], ItemNotFoundEx  
+   ception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+PS C:\Users\LENOVO\c-activity-sets\set01> gcc -g -O0 problem02.c -o problem02.exe
+PS C:\Users\LENOVO\c-activity-sets\set01> gdb problem02.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\problem02.exe...done.
 (gdb) b main
 Breakpoint 1 at 0x40146e: file problem02.c, line 6.
 (gdb) r
-Starting program: C:\Users\LENOVO\c-activity-sets\set01/a.exe 
-[New Thread 20280.0x1898]
-[New Thread 20280.0x730]
+Starting program: C:\Users\LENOVO\c-activity-sets\set01/problem02.exe 
+[New Thread 1260.0x4258]
+[New Thread 1260.0x241c]
 
 Breakpoint 1, main () at problem02.c:6
 6           printf("Enter the values\n");
@@ -22,9 +94,681 @@ Breakpoint 1, main () at problem02.c:6
 Enter the values
 7           scanf("%d",&a);
 (gdb) s
-s
+6
 8           printf("Enter the values\n");
-(gdb) s
+(gdb) n
 Enter the values
 9           scanf("%d",&b);
-(gdb) 
+(gdb) s
+6
+10          int sum=a+b;
+(gdb) n
+11          return sum;
+PS C:\Users\LENOVO\c-activity-sets\set01> cd set01
+cd : Cannot find path 'C:\Users\LENOVO\c-activity-sets\set01\set01' because it does not exist.
+At line:1 char:1
++ cd set01
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\LENOVO...ets\set01\set01:String) [Set-Location], ItemNotFoundEx 
+   ception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+PS C:\Users\LENOVO\c-activity-sets\set01> gcc -g -O0 problem02.c -o problem02.exe
+PS C:\Users\LENOVO\c-activity-sets\set01> gdb problem02.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\problem02.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem02.c, line 5.
+(gdb) r
+Starting program: C:\Users\LENOVO\c-activity-sets\set01/problem02.exe 
+[New Thread 16112.0xcc0]
+[New Thread 16112.0x3138]
+
+Breakpoint 1, main () at problem02.c:5
+5           int a,b,sum=0;
+(gdb) s
+6           printf("Enter the values\n");
+(gdb) n
+Enter the values
+7           scanf("%d",&a);
+(gdb) s
+4
+8           printf("Enter the values\n");
+(gdb) n
+Enter the values
+9           scanf("%d",&b);
+(gdb) s
+5
+10          sum=a+b;
+(gdb) n
+11          printf("The sum of %d and %d is %d",a,b,sum);
+(gdb) s
+(gdb) s
+13
+(gdb) n
+0x00401288 in __register_frame_info ()
+A debugging session is active.
+
+        Inferior 1 [process 16112] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+PS C:\Users\LENOVO\c-activity-sets\set01> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS C:\Users\LENOVO\c-activity-sets\set01> git commit -m "test"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   problem02.c
+        modified:   problem11.c
+        modified:   problem12debug.txt
+        modified:   ../set02/problem01.c
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        vivaforc.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\LENOVO\c-activity-sets\set01> git push
+Everything up-to-date
+PS C:\Users\LENOVO\c-activity-sets\set01> gdb problem02.exe
+>> GNU gdb (GDB) 7.6.1
+>> Copyright (C) 2013 Free Software Foundation, Inc.
+>> License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+>> This is free software: you are free to change and redistribute it.
+>> There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+>> and "show warranty" for details.
+>> This GDB was configured as "mingw32".
+>> For bug reporting instructions, please see:
+>> <http://www.gnu.org/software/gdb/bugs/>...
+>> Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\problem02.exe...done.
+>> (gdb) b main
+>> Breakpoint 1 at 0x40146e: file problem02.c, line 6.
+>> (gdb) r main
+>> Starting program: C:\Users\LENOVO\c-activity-sets\set01/problem02.exe main
+>> [New Thread 5148.0x37fc]
+>> [New Thread 5148.0x1ba4]
+>>
+>> Breakpoint 1, main () at problem02.c:6
+>> 6           printf("Enter the values\n");
+>> (gdb) 4
+>> Undefined command: "4".  Try "help".
+>> (gdb) b main
+>> Note: breakpoint 1 also set at pc 0x40146e.
+>> Breakpoint 2 at 0x40146e: file problem02.c, line 6.
+>> (gdb) r
+>> The program being debugged has been started already.
+>> Start it from the beginning? (y or n) y
+>> error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+>> Starting program: C:\Users\LENOVO\c-activity-sets\set01/problem02.exe main
+>> [New Thread 3328.0x1d90]
+>> [New Thread 3328.0x1880]
+>>
+>> Breakpoint 1, main () at problem02.c:6
+>> 6           printf("Enter the values\n");
+>> (gdb) n
+>> Enter the values
+>> 7           scanf("%d",&a);
+>> (gdb) s
+>> 2
+>> 8           printf("Enter the values\n");
+>> (gdb) n
+>> Enter the values
+>> 9           scanf("%d",&b);
+>> (gdb) s
+>> 4
+>> 10          int sum=a+b;
+>> (gdb) n
+>> 11          return sum;
+>> (gdb) s
+>> 12      }(gdb) n
+>> 0x00401288 in __register_frame_info ()
+>> (gdb) n
+>> which has no line number information.
+>> 0x0040128a in __register_frame_info ()
+>> (gdb) p a
+>> No symbol "a" in current context.
+>> (gdb) q
+>> A debugging session is active.
+>>
+>>         Inferior 1 [process 3328] will be killed.
+>> error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+>> PS C:\Users\LENOVO\c-activity-sets\set01> cd set01
+>> cd : Cannot find path 'C:\Users\LENOVO\c-activity-sets\set01\set01' because it does not exist.
+>> At line:1 char:1
+>> + cd set01
+>> + ~~~~~~~~
+>>     + CategoryInfo          : ObjectNotFound: (C:\Users\LENOVO...ets\set01\set01:String) [Set-Location], ItemNotFoundEx
+>>    ception
+>>     + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+>>
+>> PS C:\Users\LENOVO\c-activity-sets\set01> gcc -g -O0 problem02.c -o problem02.exe
+>> PS C:\Users\LENOVO\c-activity-sets\set01> gdb problem02.exe
+>> GNU gdb (GDB) 7.6.1
+>> Copyright (C) 2013 Free Software Foundation, Inc.
+>> License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+>> This is free software: you are free to change and redistribute it.
+>> There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+>> and "show warranty" for details.
+>> This GDB was configured as "mingw32".
+>> For bug reporting instructions, please see:
+>> <http://www.gnu.org/software/gdb/bugs/>...
+>> Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\problem02.exe...done.
+>> (gdb) b main
+>> Breakpoint 1 at 0x40146e: file problem02.c, line 6.
+>> (gdb) r
+>> Starting program: C:\Users\LENOVO\c-activity-sets\set01/problem02.exe 
+>> [New Thread 1260.0x4258]
+>> [New Thread 1260.0x241c]
+>>
+>> Breakpoint 1, main () at problem02.c:6
+>> 6           printf("Enter the values\n");
+>> (gdb) s
+>> Enter the values
+>> 7           scanf("%d",&a);
+>> (gdb) s
+>> 6
+>> 8           printf("Enter the values\n");
+>> (gdb) n
+>> Enter the values
+>> 9           scanf("%d",&b);
+>> (gdb) s
+>> 6
+>> 10          int sum=a+b;
+>> (gdb) n
+>> 11          return sum;
+>> PS C:\Users\LENOVO\c-activity-sets\set01> cd set01
+>> cd : Cannot find path 'C:\Users\LENOVO\c-activity-sets\set01\set01' because it does not exist.
+>> At line:1 char:1
+>> + cd set01
+>> + ~~~~~~~~
+>>     + CategoryInfo          : ObjectNotFound: (C:\Users\LENOVO...ets\set01\set01:String) [Set-Location], ItemNotFoundEx
+>>    ception
+>>     + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+>>
+>> PS C:\Users\LENOVO\c-activity-sets\set01> gcc -g -O0 problem02.c -o problem02.exe
+>> PS C:\Users\LENOVO\c-activity-sets\set01> gdb problem02.exe
+>> GNU gdb (GDB) 7.6.1
+>> Copyright (C) 2013 Free Software Foundation, Inc.
+>> License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+>> This is free software: you are free to change and redistribute it.
+>> There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+>> and "show warranty" for details.
+>> This GDB was configured as "mingw32".
+>> For bug reporting instructions, please see:
+>> <http://www.gnu.org/software/gdb/bugs/>...
+>> Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\problem02.exe...done.
+>> (gdb) b main
+>> Breakpoint 1 at 0x40146e: file problem02.c, line 5.
+>> (gdb) r
+>> Starting program: C:\Users\LENOVO\c-activity-sets\set01/problem02.exe 
+>> [New Thread 16112.0xcc0]
+>> [New Thread 16112.0x3138]
+>>
+>> Breakpoint 1, main () at problem02.c:5
+>> 5           int a,b,sum=0;
+>> (gdb) s
+>> 6           printf("Enter the values\n");
+>> (gdb) n
+>> Enter the values
+>> 7           scanf("%d",&a);
+>> (gdb) s
+>> 4
+>> 8           printf("Enter the values\n");
+>> (gdb) n
+>> Enter the values
+>> 9           scanf("%d",&b);
+>> (gdb) s
+>> 5
+>> 10          sum=a+b;
+>> (gdb) n
+>> 11          printf("The sum of %d and %d is %d",a,b,sum);
+>> (gdb) s
+>> (gdb) s
+>> 13
+>> (gdb) n
+>> 0x00401288 in __register_frame_info ()
+>> A debugging session is active.
+>>
+>>         Inferior 1 [process 16112] will be killed.
+>>
+>> Quit anyway? (y or n) y
+>> error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+>> PS C:\Users\LENOVO\c-activity-sets\set01> git add.
+>> git: 'add.' is not a git command. See 'git --help'.
+>>
+>> The most similar command is
+>>         add
+>> PS C:\Users\LENOVO\c-activity-sets\set01> git commit -m "test"
+>> On branch main
+>> Your branch is up to date with 'origin/main'.
+>> 
+>> Changes not staged for commit:
+>>   (use "git restore <file>..." to discard changes in working directory)
+>>         modified:   problem02.c
+>>         modified:   problem11.c
+>>         modified:   problem12debug.txt
+>>         modified:   ../set02/problem01.c
+>>
+>> Untracked files:
+>>   (use "git add <file>..." to include in what will be committed)
+>>         vivaforc.txt
+>> 
+>> no changes added to commit (use "git add" and/or "git commit -a")
+>> PS C:\Users\LENOVO\c-activity-sets\set01> git push
+>> Everything up-to-date
+>> PS C:\Users\LENOVO\c-activity-sets\set01>
+Oops, something went wrong.  Please report this bug with the details below.
+Report on GitHub: https://github.com/lzybkr/PSReadLine/issues/new
+-----------------------------------------------------------------------
+Last 200 Keys:
+ e Enter
+ c d Space s e t 0 1 Enter
+ g c c Space - g Space - O 0 Space p r o b l e m 0 2 Space - o Space p r o b l e m 0 2 . e x e LeftArrow LeftArrow LeftArrow LeftArrow LeftArrow LeftArrow LeftArrow LeftArrow LeftArrow LeftArrow LeftArrow LeftArrow LeftArrow LeftArrow LeftArrow LeftArrow LeftArrow . c Enter
+ g d b Space p r o b l e m 0 2 . e x e Enter
+ c l e a r Enter
+ c d Space s e t 0 1 Enter
+ g c c Space - g Space - O 0 Space p r o b l e m 0 2 . c Space - o Space p r o b l e m 0 2 . e x e Enter
+ g d b Space p r o b l e m 0 2 . e x e Enter
+ g i t Space a d d . Enter
+ g i t Space c o m m i t Space - m Space " t e s t " Enter
+ g i t Space p u s h Enter
+ Ctrl+v Ctrl+v
+
+Exception:
+System.ArgumentOutOfRangeException: The value must be greater than or equal to zero and less than the console's buffer size in that dimension.
+Parameter name: top
+Actual value was -176.
+   at System.Console.SetCursorPosition(Int32 left, Int32 top)
+   at Microsoft.PowerShell.PSConsoleReadLine.ReallyRender(RenderData renderData, String defaultColor)
+   at Microsoft.PowerShell.PSConsoleReadLine.ForceRender()
+   at Microsoft.PowerShell.PSConsoleReadLine.Paste(Nullable`1 key, Object arg)
+   at Microsoft.PowerShell.PSConsoleReadLine.ProcessOneKey(ConsoleKeyInfo key, Dictionary`2 dispatchTable, Boolean ignoreIfNoAction, Object arg)
+   at Microsoft.PowerShell.PSConsoleReadLine.InputLoop()
+   at Microsoft.PowerShell.PSConsoleReadLine.ReadLine(Runspace runspace, EngineIntrinsics engineIntrinsics)
+-----------------------------------------------------------------------
+PS C:\Users\LENOVO\c-activity-sets\set01> gdb problem02.exe
+>> GNU gdb (GDB) 7.6.1
+>> Copyright (C) 2013 Free Software Foundation, Inc.
+>> License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+>> This is free software: you are free to change and redistribute it.
+>> There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+>> and "show warranty" for details.
+>> This GDB was configured as "mingw32".
+>> For bug reporting instructions, please see:
+>> <http://www.gnu.org/software/gdb/bugs/>...
+>> Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\problem02.exe...done.
+>> (gdb) b main
+>> Breakpoint 1 at 0x40146e: file problem02.c, line 6.
+>> (gdb) r main
+>> Starting program: C:\Users\LENOVO\c-activity-sets\set01/problem02.exe main
+>> [New Thread 5148.0x37fc]
+>> [New Thread 5148.0x1ba4]
+>>
+>> Breakpoint 1, main () at problem02.c:6
+>> 6           printf("Enter the values\n");
+>> (gdb) 4
+>> Undefined command: "4".  Try "help".
+>> (gdb) b main
+>> Note: breakpoint 1 also set at pc 0x40146e.
+>> Breakpoint 2 at 0x40146e: file problem02.c, line 6.
+>> (gdb) r
+>> The program being debugged has been started already.
+>> Start it from the beginning? (y or n) y
+>> error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+>> Starting program: C:\Users\LENOVO\c-activity-sets\set01/problem02.exe main
+>> [New Thread 3328.0x1d90]
+>> [New Thread 3328.0x1880]
+>>
+>> Breakpoint 1, main () at problem02.c:6
+>> 6           printf("Enter the values\n");
+>> (gdb) n
+>> Enter the values
+>> 7           scanf("%d",&a);
+>> (gdb) s
+>> 2
+>> 8           printf("Enter the values\n");
+>> (gdb) n
+>> Enter the values
+>> 9           scanf("%d",&b);
+>> (gdb) s
+>> 4
+>> 10          int sum=a+b;
+>> (gdb) n
+>> 11          return sum;
+>> (gdb) s
+>> 12      }(gdb) n
+>> 0x00401288 in __register_frame_info ()
+>> (gdb) n
+>> which has no line number information.
+>> 0x0040128a in __register_frame_info ()
+>> (gdb) p a
+>> No symbol "a" in current context.
+>> (gdb) q
+>> A debugging session is active.
+>>
+>>         Inferior 1 [process 3328] will be killed.
+>> error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+>> PS C:\Users\LENOVO\c-activity-sets\set01> cd set01
+>> cd : Cannot find path 'C:\Users\LENOVO\c-activity-sets\set01\set01' because it does not exist.
+>> At line:1 char:1
+>> + cd set01
+>> + ~~~~~~~~
+>>     + CategoryInfo          : ObjectNotFound: (C:\Users\LENOVO...ets\set01\set01:String) [Set-Location], ItemNotFoundEx
+>>    ception
+>>     + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+>>
+>> PS C:\Users\LENOVO\c-activity-sets\set01> gcc -g -O0 problem02.c -o problem02.exe
+>> PS C:\Users\LENOVO\c-activity-sets\set01> gdb problem02.exe
+>> GNU gdb (GDB) 7.6.1
+>> Copyright (C) 2013 Free Software Foundation, Inc.
+>> License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+>> This is free software: you are free to change and redistribute it.
+>> There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+>> and "show warranty" for details.
+>> This GDB was configured as "mingw32".
+>> For bug reporting instructions, please see:
+>> <http://www.gnu.org/software/gdb/bugs/>...
+>> Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\problem02.exe...done.
+>> (gdb) b main
+>> Breakpoint 1 at 0x40146e: file problem02.c, line 6.
+>> (gdb) r
+>> Starting program: C:\Users\LENOVO\c-activity-sets\set01/problem02.exe 
+>> [New Thread 1260.0x4258]
+>> [New Thread 1260.0x241c]
+>>
+>> Breakpoint 1, main () at problem02.c:6
+>> 6           printf("Enter the values\n");
+>> (gdb) s
+>> Enter the values
+>> 7           scanf("%d",&a);
+>> (gdb) s
+>> 6
+>> 8           printf("Enter the values\n");
+>> (gdb) n
+>> Enter the values
+>> 9           scanf("%d",&b);
+>> (gdb) s
+>> 6
+>> 10          int sum=a+b;
+>> (gdb) n
+>> 11          return sum;
+>> PS C:\Users\LENOVO\c-activity-sets\set01> cd set01
+>> cd : Cannot find path 'C:\Users\LENOVO\c-activity-sets\set01\set01' because it does not exist.
+>> At line:1 char:1
+>> + cd set01
+>> + ~~~~~~~~
+>>     + CategoryInfo          : ObjectNotFound: (C:\Users\LENOVO...ets\set01\set01:String) [Set-Location], ItemNotFoundEx
+>>    ception
+>>     + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+>>
+>> PS C:\Users\LENOVO\c-activity-sets\set01> gcc -g -O0 problem02.c -o problem02.exe
+>> PS C:\Users\LENOVO\c-activity-sets\set01> gdb problem02.exe
+>> GNU gdb (GDB) 7.6.1
+>> Copyright (C) 2013 Free Software Foundation, Inc.
+>> License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+>> This is free software: you are free to change and redistribute it.
+>> There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+>> and "show warranty" for details.
+>> This GDB was configured as "mingw32".
+>> For bug reporting instructions, please see:
+>> <http://www.gnu.org/software/gdb/bugs/>...
+>> Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\problem02.exe...done.
+>> (gdb) b main
+>> Breakpoint 1 at 0x40146e: file problem02.c, line 5.
+>> (gdb) r
+>> Starting program: C:\Users\LENOVO\c-activity-sets\set01/problem02.exe 
+>> [New Thread 16112.0xcc0]
+>> [New Thread 16112.0x3138]
+>>
+>> Breakpoint 1, main () at problem02.c:5
+>> 5           int a,b,sum=0;
+>> (gdb) s
+>> 6           printf("Enter the values\n");
+>> (gdb) n
+>> Enter the values
+>> 7           scanf("%d",&a);
+>> (gdb) s
+>> 4
+>> 8           printf("Enter the values\n");
+>> (gdb) n
+>> Enter the values
+>> 9           scanf("%d",&b);
+>> (gdb) s
+>> 5
+>> 10          sum=a+b;
+>> (gdb) n
+>> 11          printf("The sum of %d and %d is %d",a,b,sum);
+>> (gdb) s
+>> (gdb) s
+>> 13
+>> (gdb) n
+>> 0x00401288 in __register_frame_info ()
+>> A debugging session is active.
+>>
+>>         Inferior 1 [process 16112] will be killed.
+>>
+>> Quit anyway? (y or n) y
+>> error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+>> PS C:\Users\LENOVO\c-activity-sets\set01> git add.
+>> git: 'add.' is not a git command. See 'git --help'.
+>>
+>> The most similar command is
+>>         add
+>> PS C:\Users\LENOVO\c-activity-sets\set01> git commit -m "test"
+>> On branch main
+>> Your branch is up to date with 'origin/main'.
+>>
+>> Changes not staged for commit:
+>>   (use "git restore <file>..." to discard changes in working directory)
+>>         modified:   problem02.c
+>>         modified:   problem11.c
+>>         modified:   problem12debug.txt
+>>         modified:   ../set02/problem01.c
+>>
+>> Untracked files:
+>>   (use "git add <file>..." to include in what will be committed)
+>>         vivaforc.txt
+>> 
+>> no changes added to commit (use "git add" and/or "git commit -a")
+>> PS C:\Users\LENOVO\c-activity-sets\set01> git push
+>> Everything up-to-date
+>> PS C:\Users\LENOVO\c-activity-sets\set01> gdb problem02.exe
+>> GNU gdb (GDB) 7.6.1
+>> Copyright (C) 2013 Free Software Foundation, Inc.
+>> License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+>> This is free software: you are free to change and redistribute it.
+>> There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+>> and "show warranty" for details.
+>> This GDB was configured as "mingw32".
+>> For bug reporting instructions, please see:
+>> <http://www.gnu.org/software/gdb/bugs/>...
+>> Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\problem02.exe...done.
+>> (gdb) b main
+>> Breakpoint 1 at 0x40146e: file problem02.c, line 6.
+>> (gdb) r main
+>> Starting program: C:\Users\LENOVO\c-activity-sets\set01/problem02.exe main
+>> [New Thread 5148.0x37fc]
+>> [New Thread 5148.0x1ba4]
+>>
+>> Breakpoint 1, main () at problem02.c:6
+>> 6           printf("Enter the values\n");
+>> (gdb) 4
+>> Undefined command: "4".  Try "help".
+>> (gdb) b main
+>> Note: breakpoint 1 also set at pc 0x40146e.
+>> Breakpoint 2 at 0x40146e: file problem02.c, line 6.
+>> (gdb) r
+>> The program being debugged has been started already.
+>> Start it from the beginning? (y or n) y
+>> error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+>> Starting program: C:\Users\LENOVO\c-activity-sets\set01/problem02.exe main
+>> [New Thread 3328.0x1d90]
+>> [New Thread 3328.0x1880]
+>>
+>> Breakpoint 1, main () at problem02.c:6
+>> 6           printf("Enter the values\n");
+>> (gdb) n
+>> Enter the values
+>> 7           scanf("%d",&a);
+>> (gdb) s
+>> 2
+>> 8           printf("Enter the values\n");
+>> (gdb) n
+>> Enter the values
+>> 9           scanf("%d",&b);
+>> (gdb) s
+>> 4
+>> 10          int sum=a+b;
+>> (gdb) n
+>> 11          return sum;
+>> (gdb) s
+>> 12      }(gdb) n
+>> 0x00401288 in __register_frame_info ()
+>> (gdb) n
+>> which has no line number information.
+>> 0x0040128a in __register_frame_info ()
+>> (gdb) p a
+>> No symbol "a" in current context.
+>> (gdb) q
+>> A debugging session is active.
+>>
+>>         Inferior 1 [process 3328] will be killed.
+>> error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+>> PS C:\Users\LENOVO\c-activity-sets\set01> cd set01
+>> cd : Cannot find path 'C:\Users\LENOVO\c-activity-sets\set01\set01' because it does not exist.
+>> At line:1 char:1
+>> + cd set01
+>> + ~~~~~~~~
+>>     + CategoryInfo          : ObjectNotFound: (C:\Users\LENOVO...ets\set01\set01:String) [Set-Location], ItemNotFoundEx
+>>    ception
+>>     + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+>>
+>> PS C:\Users\LENOVO\c-activity-sets\set01> gcc -g -O0 problem02.c -o problem02.exe
+>> PS C:\Users\LENOVO\c-activity-sets\set01> gdb problem02.exe
+>> GNU gdb (GDB) 7.6.1
+>> Copyright (C) 2013 Free Software Foundation, Inc.
+>> License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+>> This is free software: you are free to change and redistribute it.
+>> There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+>> and "show warranty" for details.
+>> This GDB was configured as "mingw32".
+>> For bug reporting instructions, please see:
+>> <http://www.gnu.org/software/gdb/bugs/>...
+>> Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\problem02.exe...done.
+>> (gdb) b main
+>> Breakpoint 1 at 0x40146e: file problem02.c, line 6.
+>> (gdb) r
+>> Starting program: C:\Users\LENOVO\c-activity-sets\set01/problem02.exe 
+>> [New Thread 1260.0x4258]
+>> [New Thread 1260.0x241c]
+>>
+>> Breakpoint 1, main () at problem02.c:6
+>> 6           printf("Enter the values\n");
+>> (gdb) s
+>> Enter the values
+>> 7           scanf("%d",&a);
+>> (gdb) s
+>> 6
+>> 8           printf("Enter the values\n");
+>> (gdb) n
+>> Enter the values
+>> 9           scanf("%d",&b);
+>> (gdb) s
+>> 6
+>> 10          int sum=a+b;
+>> (gdb) n
+>> 11          return sum;
+>> PS C:\Users\LENOVO\c-activity-sets\set01> cd set01
+>> cd : Cannot find path 'C:\Users\LENOVO\c-activity-sets\set01\set01' because it does not exist.
+>> At line:1 char:1
+>> + cd set01
+>> + ~~~~~~~~
+>>     + CategoryInfo          : ObjectNotFound: (C:\Users\LENOVO...ets\set01\set01:String) [Set-Location], ItemNotFoundEx
+>>    ception
+>>     + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+>>
+>> PS C:\Users\LENOVO\c-activity-sets\set01> gcc -g -O0 problem02.c -o problem02.exe
+>> PS C:\Users\LENOVO\c-activity-sets\set01> gdb problem02.exe
+>> GNU gdb (GDB) 7.6.1
+>> Copyright (C) 2013 Free Software Foundation, Inc.
+>> License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+>> This is free software: you are free to change and redistribute it.
+>> There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+>> and "show warranty" for details.
+>> This GDB was configured as "mingw32".
+>> For bug reporting instructions, please see:
+>> <http://www.gnu.org/software/gdb/bugs/>...
+>> Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\problem02.exe...done.
+>> (gdb) b main
+>> Breakpoint 1 at 0x40146e: file problem02.c, line 5.
+>> (gdb) r
+>> Starting program: C:\Users\LENOVO\c-activity-sets\set01/problem02.exe 
+>> [New Thread 16112.0xcc0]
+>> [New Thread 16112.0x3138]
+>>
+>> Breakpoint 1, main () at problem02.c:5
+>> 5           int a,b,sum=0;
+>> (gdb) s
+>> 6           printf("Enter the values\n");
+>> (gdb) n
+>> Enter the values
+>> 7           scanf("%d",&a);
+>> (gdb) s
+>> 4
+>> 8           printf("Enter the values\n");
+>> (gdb) n
+>> Enter the values
+>> 9           scanf("%d",&b);
+>> (gdb) s
+>> 5
+>> 10          sum=a+b;
+>> (gdb) n
+>> 11          printf("The sum of %d and %d is %d",a,b,sum);
+>> (gdb) s
+>> (gdb) s
+>> 13
+>> (gdb) n
+>> 0x00401288 in __register_frame_info ()
+>> A debugging session is active.
+>>
+>>         Inferior 1 [process 16112] will be killed.
+>>
+>> Quit anyway? (y or n) y
+>> error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+>> PS C:\Users\LENOVO\c-activity-sets\set01> git add.
+>> git: 'add.' is not a git command. See 'git --help'.
+>>
+>> The most similar command is
+>>         add
+>> PS C:\Users\LENOVO\c-activity-sets\set01> git commit -m "test"
+>> On branch main
+>> Your branch is up to date with 'origin/main'.
+>>
+>> Changes not staged for commit:
+>>   (use "git restore <file>..." to discard changes in working directory)
+>>         modified:   problem02.c
+>>         modified:   problem11.c
+>>         modified:   problem12debug.txt
+>>         modified:   ../set02/problem01.c
+>>
+>> Untracked files:
+>>   (use "git add <file>..." to include in what will be committed)
+>>         vivaforc.txt
+>> 
+>> no changes added to commit (use "git add" and/or "git commit -a")
+>> PS C:\Users\LENOVO\c-activity-sets\set01> git push
+>> Everything up-to-date

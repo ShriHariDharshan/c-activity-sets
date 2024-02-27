@@ -13,9 +13,9 @@ int main()
 void input(int *a, int *b)
 {
     printf("Enter the first number: ");
-    scanf("%d",&a);
+    scanf("%d",a);
     printf("Enter the second number: ");
-    scanf("%d",&b);
+    scanf("%d",b);
 }
 void add(int a, int b, int *sum)
 {
