@@ -1,0 +1,38 @@
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.        
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\LENOVO\c-activity-sets\set02\problem04.exe...done.
+(gdb) l
+1       //04.  Write a program to find Sum of composite number in an array of different numbers entered by the user.
+2       #include <stdio.h>
+3       int input_array_size();
+4       void input_array(int n, int a[n]);
+5       int sum_composite_numbers(int n, int a[n]);
+6       void output(int sum);
+7       int main()
+8       {
+9           int size, sum;
+10          size = input_array_size();
+(gdb) b
+No default breakpoint address now.
+(gdb) r
+Starting program: C:\Users\LENOVO\c-activity-sets\set02/./problem04.exe 
+[New Thread 3268.0x2fac]
+[New Thread 3268.0x1540]
+Enter the size of the array: 7
+Enter the elements of the array: 14
+24
+17
+16
+31
+46
+48
+The sum of composite numbers in the array is: 148
+[Inferior 1 (process 3268) exited normally]
+(gdb) q
