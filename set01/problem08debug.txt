@@ -7,25 +7,65 @@ and "show warranty" for details.
 This GDB was configured as "mingw32".
 For bug reporting instructions, please see:
 <http://www.gnu.org/software/gdb/bugs/>...
-Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\a.exe...done.
+Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\problem08.exe...done.
 (gdb) l
-1       //2. Write a C program to add two numbers.
-2       #include<stdio.h>
-3       int main()
-4       {
-5           int a,b;
-6           printf("Enter the values\n");
-7           scanf("%d",&a);
-8           printf("Enter the values\n");
-9           scanf("%d",&b);
-10          int sum=a+b;
+1       #include <stdio.h>
+2       int input_array_size();
+3       void input_array(int n, int a[n]);
+4       int sum_n_array(int n, int a[n]);
+5       void output(int n, int a[n],int sum);
+6       int main()
+7       {
+8           int n, sum=0;
+9           n=input_array_size();
+10          int a[n];
+(gdb) b
+No default breakpoint address now.
 (gdb) r
-Starting program: C:\Users\LENOVO\c-activity-sets\set01/a.exe 
-[New Thread 7912.0x3a14]
-[New Thread 7912.0x47f4]
-Enter the values
+Starting program: C:\Users\LENOVO\c-activity-sets\set01/./problem08.exe 
+[New Thread 10884.0x48e0]
+[New Thread 10884.0x3060]
+Input array size: 34
+Input the array:
+31
 54
-Enter the values
 34
-[Inferior 1 (process 7912) exited with code 0130]
+23
+53
+46
+48
+42
+65
+76
+79 
+64
+48[New Thread 10884.0x2968]
+ 87
+09
+98  
+90
+9090
+54
+43
+543
+543
+43
+4
+343
+4
+5
+5
+
+3
+4
+5
+5
+5443445
+4
+The sum of 31+54+34+23+53+46+48+42+65+76+79+64+48+87+9+98+90+9090+54+43+543+543+43+4+343+4+5+5+3+4+5+5+5443445+4 is 5455090
+[Inferior 1 (process 10884) exited normally]
+(gdb) 3
+Undefined command: "3".  Try "help".
+(gdb) 3
+Undefined command: "3".  Try "help".
 (gdb) q

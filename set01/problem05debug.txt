@@ -7,36 +7,30 @@ and "show warranty" for details.
 This GDB was configured as "mingw32".
 For bug reporting instructions, please see:
 <http://www.gnu.org/software/gdb/bugs/>...
-Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\a.exe...done.
+Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\problem05.exe...done.
 (gdb) l
-1       //2. Write a C program to add two numbers.
+1       // 5. Write a C program to compare three numbers using **pass by value**
 2       #include<stdio.h>
-3       int main()
-4       {
-5           int a,b;
-6           printf("Enter the values\n");
-7           scanf("%d",&a);
-8           printf("Enter the values\n");
-9           scanf("%d",&b);
-10          int sum=a+b;
+3       int input();
+4       int compare(int a, int b, int c);
+5       void output(int a, int b, int c, int largest);
+6       int main()
+7       {
+8           int num1, num2, num3, largest;
+9           num1=input();
+10          num2=input();
 (gdb) b
 No default breakpoint address now.
-(gdb) r
-Starting program: C:\Users\LENOVO\c-activity-sets\set01/a.exe 
-[New Thread 7972.0x69c]
-[New Thread 7972.0x2a2c]
+(gdb) r 
+Starting program: C:\Users\LENOVO\c-activity-sets\set01/./problem05.exe 
+[New Thread 6128.0x97c]
+[New Thread 6128.0x3e08]
 Enter the values
-q
+14
 Enter the values
-[Inferior 1 (process 7972) exited with code 015170000]
-(gdb) 3 5
-Undefined command: "3".  Try "help".
-(gdb) r
-Starting program: C:\Users\LENOVO\c-activity-sets\set01/a.exe 
-[New Thread 11924.0x49e0]
-[New Thread 11924.0x4b7c]
+31
 Enter the values
-2 4 5
-Enter the values
-[Inferior 1 (process 11924) exited with code 06]
+48
+The largest of 14, 31, and 48 is 48
+[Inferior 1 (process 6128) exited normally]
 (gdb) q

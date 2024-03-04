@@ -7,24 +7,23 @@ and "show warranty" for details.
 This GDB was configured as "mingw32".
 For bug reporting instructions, please see:
 <http://www.gnu.org/software/gdb/bugs/>...
-Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\a.exe...done.
+Reading symbols from C:\Users\LENOVO\c-activity-sets\set01\problem06.exe...done.
 (gdb) l
-1       //2. Write a C program to add two numbers.
-2       #include<stdio.h>
-3       int main()
-4       {
-5           int a,b;
-6           printf("Enter the values\n");
-7           scanf("%d",&a);
-8           printf("Enter the values\n");
-9           scanf("%d",&b);
-10          int sum=a+b;
+1       #include<stdio.h>
+2       int input(int *a, int *b, int *c);
+3       void compare(int a, int b, int c, int *largest);
+4       void output(int a, int b, int c, int largest);
+5       int main()
+6       {
+7           int x, y, z, *largest;
+8           x=input;
+9           y=input;
+10          z=input;
+(gdb) b
+No default breakpoint address now.
 (gdb) r
-Starting program: C:\Users\LENOVO\c-activity-sets\set01/a.exe 
-[New Thread 13356.0xccc]
-[New Thread 13356.0x3504]
-Enter the values
-3 4 5
-Enter the values
-[Inferior 1 (process 13356) exited with code 07]
+Starting program: C:\Users\LENOVO\c-activity-sets\set01/./problem06.exe 
+[New Thread 3040.0x3a2c]
+[New Thread 3040.0x253c]
+[Inferior 1 (process 3040) exited normally]
 (gdb) q
