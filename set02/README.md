@@ -113,27 +113,7 @@ void output(int a, int b, int gcd);
 ```
 
 ---
-
-06. Write a program to reverse a string.
-
-***Function Declarations***
-```c
-void input_string(char *a);
-void str_reverse(char *str, char *rev_str);
-void output(char *a, char *reverse_a);
-```
-
-***Input***
-```
-hello
-```
-
-***Output***
-```
-olleh
-```
-
----
+.
 
 07. Write a program to find the area of a triangle.
 

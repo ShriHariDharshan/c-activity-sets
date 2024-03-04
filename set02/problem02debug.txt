@@ -1,0 +1,34 @@
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.        
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".      
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\LENOVO\c-activity-sets\set02\problem02.exe...done.
+(gdb) l
+1       //02.  Write a program to find if a triangle is scalene.
+2       #include <stdio.h>
+3       int input_side();
+4       int check_scalene(int a, int b, int c);
+5       void output(int a, int b, int c, int is_scalene);
+6       int main()
+7       {
+8           int side1, side2, side3;
+9           int is_scalene;
+10          printf("Enter the lengths of the three sides of the triangle:\n");
+(gdb) b
+No default breakpoint address now.
+(gdb) r
+Starting program: C:\Users\LENOVO\c-activity-sets\set02/./problem02.exe 
+[New Thread 20180.0x4238]
+[New Thread 20180.0x2bfc]
+Enter the lengths of the three sides of the triangle:
+7
+6
+9
+The triangle with sides 7, 6, and 9 is scalene
+[Inferior 1 (process 20180) exited normally]
+(gdb) q
